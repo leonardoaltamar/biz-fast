@@ -1,0 +1,9 @@
+.group{
+    position: relative;
+    width: 100%;
+}
+
+.group .input.fill + .label,
+.group .input:focus + .label {
+    transform: translateY(calc(-100%)) scale(0.80);
+}
