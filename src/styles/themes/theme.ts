@@ -4,6 +4,8 @@ export const theme = {
         black: '#000',
         white: '#fff',
         backGroundInput: '#e3eaf3',
-        backgroundPage: '#fff'
+        backgroundPage: '#fff',
+        borderInput: '#a8a8a8',
+        letterColor: '#000'
     }
 }

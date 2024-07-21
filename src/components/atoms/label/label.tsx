@@ -14,5 +14,5 @@ export const LabelAtom = styled.label`
     overflow: hidden;
     text-overflow: ellipsis;
     width: 87%;
-    color: #1242f4;
+    color: ${(props => props.theme.colors.letterColor)};
 `

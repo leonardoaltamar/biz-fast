@@ -4,6 +4,7 @@
     --white: #fff;
     --backGroundInput: #e3eaf3;
     --backgroundPage: #fff;
+    --borderInput: #a8a8a8;
 }
 
 
@@ -15,4 +16,8 @@
 
 .background-white{
     background-color: var(--white);
+}
+
+.background-primary-gradient{
+    background: linear-gradient(180deg, rgba(18,66,244,1) 0%, rgba(18,95,244,1) 46%, rgba(18,140,244,1) 100%);
 }

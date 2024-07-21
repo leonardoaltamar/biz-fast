@@ -15,7 +15,7 @@ export const InputAtom = styled.input<InputProps>`
     border-radius: 12px;
 
     background-color: ${(props:any) => props?.outlined ? `${props.theme.colors.white}` :  `${props.theme.colors.backGroundInput}` };
-    border: ${(props:any) => props.outlined ? `2px solid ${props.theme.colors.primary}` : 'none' };
+    border: ${(props:any) => props.outlined ? `2px solid ${props.theme.colors.borderInput}` : 'none' };
     &:focus-within{
         outline: transparent solid .2rem;
     }
