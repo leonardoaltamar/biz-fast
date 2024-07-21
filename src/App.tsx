@@ -1,5 +1,6 @@
 
-import { InputAtom } from './components/atoms/input/input'
+
+import { InputAtom } from './components/atoms/input/input-styled'
 import { LabelAtom } from './components/atoms/label/label'
 import { InputGroupMolecule } from './components/molecules/input-group/inputGroup'
 
@@ -11,7 +12,7 @@ function App() {
       <h1 className='mb-2'>biz fast app</h1>  
 
       <InputGroupMolecule>
-        <InputAtom />
+        <InputAtom outlined={true} />
         <LabelAtom label="nombre"></LabelAtom>    
       </InputGroupMolecule>
       
