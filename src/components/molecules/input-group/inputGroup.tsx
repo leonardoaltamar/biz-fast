@@ -1,4 +1,4 @@
-import './inputGroup.css'
+import './inputGroup.scss'
 
 export const InputGroupMolecule = ({children}:any) => {
   return (
