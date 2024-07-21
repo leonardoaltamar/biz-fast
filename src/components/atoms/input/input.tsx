@@ -1,6 +1,10 @@
-import {styled, css} from "styled-components";
+import {styled} from "styled-components";
 
-export const InputAtom:any = styled.input`
+interface InputProps {
+    outlined?: boolean
+}
+
+export const InputAtom = styled.input<InputProps>`
     flex: 1 0 auto;
     line-height: 1.25rem;
     width: 100%;

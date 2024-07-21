@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
+interface ButtonProps {
+    outlined?: boolean
+}
 
-export const ButtonAtom:any = styled.button`
+export const ButtonAtom = styled.button<ButtonProps>`
     width: 100%;
     background-color: ${ (props:any)=> props.outlined ? 'transparent' : '#1242f4' };
 

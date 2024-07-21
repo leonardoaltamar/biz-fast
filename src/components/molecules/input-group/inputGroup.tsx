@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InputGroupMolecule:any = styled.div`
+export const InputGroupMolecule = styled.div`
     position: relative;
     width: 100%;
     input.fill + label,
