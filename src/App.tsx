@@ -1,21 +1,42 @@
 
 
-import { InputAtom } from './components/atoms/input/input-styled'
+import { ButtonAtom } from './components/atoms/button/button'
+import { InputAtom } from './components/atoms/input/input'
 import { LabelAtom } from './components/atoms/label/label'
 import { InputGroupMolecule } from './components/molecules/input-group/inputGroup'
 
+
+
 function App() {
-  
+
 
   return (
-    <div className='container mx-auto'>
-      <h1 className='mb-2'>biz fast app</h1>  
+    <div className='ml:container mx-auto p-8'>
+      <h1 className='mb-2 text-xl font-bold text-center mb-8'>Componentes</h1>
 
-      <InputGroupMolecule>
-        <InputAtom outlined={true} />
-        <LabelAtom label="nombre"></LabelAtom>    
-      </InputGroupMolecule>
-      
+      <div className='mb-8'>
+        <h2 className='mb-2 text-xl'>Inputs</h2>
+
+        <InputGroupMolecule className={'mb-5'}>
+          <InputAtom outlined={true} />
+          <LabelAtom>nombre</LabelAtom>
+        </InputGroupMolecule>
+
+        <InputGroupMolecule>
+          <InputAtom />
+          <LabelAtom>nombre</LabelAtom>
+        </InputGroupMolecule>
+
+      </div>
+
+      <div className='mb-8'>
+        <h2 className='mb-2 text-xl'>Buttons</h2>
+        <ButtonAtom className={'mb-3'}>Ingresar</ButtonAtom>
+        <ButtonAtom outlined={true}>Ingresar</ButtonAtom>
+      </div>
+
+
+
     </div>
   )
 }

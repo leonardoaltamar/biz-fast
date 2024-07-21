@@ -1,8 +1,10 @@
-import { InputGroupStyled } from './inputGroup-styled'
-import './inputGroup.scss'
+import styled from "styled-components";
 
-export const InputGroupMolecule = ({children}:any) => {
-  return (
-    <InputGroupStyled className="group">{children}</InputGroupStyled>
-  )
-}
+export const InputGroupMolecule:any = styled.div`
+    position: relative;
+    width: 100%;
+    input.fill + label,
+    input:focus + label{
+        transform: translateY(calc(-100%)) scale(0.80);
+    }
+`
